@@ -14,7 +14,10 @@ requirejs.config({
   paths: {
     app: dir+'/app',
     jquery: dir+'/lib/jquery'
-  }
+  },
+    "shim": {
+	"jquery-cookie" : ['jquery']
+    }
 });
 
 // Start loading the main app file. Put all of
