@@ -4,20 +4,27 @@
 
   // The path of the dev files (main shouild be directly underneath this)
   baseUrl: '.',
-
+    dir: '.',
   // Output everything to one minified file
-  out: 'myplugin.min.js',
 
   // Comment out the below line to minify using UglifyJS
   //optimize: "none",
 
   // Build from the app folder (relative to baseUrl)
-  name: 'app',
+  namespace: 'foo',
 
   // Set paths for libs
   paths: {
-    jquery: 'lib/jquery'
-  }
+      jquery: 'lib/jquery',
+      requireLib: 'lib/require'
+  },
+    modules: [
+	{
+	    name: 'foo',
+	    includes: ['requireLib','main'],
+	    create: true
+	}
+    ]
 
 })
 
