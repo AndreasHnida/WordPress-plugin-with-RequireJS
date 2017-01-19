@@ -4,7 +4,7 @@
 
   // The path of the dev files (main shouild be directly underneath this)
   baseUrl: 'js',
-    dir: 'js/lib',
+    dir: 'foo',
   // Output everything to one minified file
 
   // Comment out the below line to minify using UglifyJS
@@ -21,7 +21,7 @@
     modules: [
 	{
 	    name: 'foo',
-	    includes: ['requireLib','main'],
+	    includes: ['requireLib','app'],
 	    create: true
 	}
     ]
