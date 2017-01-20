@@ -21,7 +21,7 @@
     modules: [
 	{
 	    name: 'foo',
-	    includes: ['requireLib','app'],
+	    include: ['requireLib','app'],
 	    create: true
 	}
     ]
