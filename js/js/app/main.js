@@ -1,0 +1,1 @@
+foo.define(["require","lib/jquery"],function(e){var t=foo.require("lib/jquery");t(document).ready(function(){console.log("jQuery has been loaded through a RequireJS Wordpress plugin")})});

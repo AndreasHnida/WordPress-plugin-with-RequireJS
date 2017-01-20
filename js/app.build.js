@@ -3,16 +3,15 @@
   // TO RUN THE BUILD, GET TO THIS DIR IN THE COMMAND LINE AND RUN: node r.js -o app.build.js
 
   // The path of the dev files (main shouild be directly underneath this)
-  baseUrl: 'js',
-    dir: 'foo',
+  baseUrl: '../js',
+    dir: 'js',
   // Output everything to one minified file
 
   // Comment out the below line to minify using UglifyJS
   //optimize: "none",
 
   // Build from the app folder (relative to baseUrl)
-  namespace: 'fooo',
-
+  namespace: 'foo',
 
   // Set paths for libs
   paths: {
@@ -21,8 +20,8 @@
   },
     modules: [
 	{
-	    name: 'fooo',
-	    includes: ['requireLib','main'],
+	    name: 'foo',
+	    include: ['requireLib','app'],
 	    create: true
 	}
     ]

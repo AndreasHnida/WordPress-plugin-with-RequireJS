@@ -1,0 +1,1 @@
+({baseUrl:"../js",dir:"js",namespace:"foo",paths:{jquery:"lib/jquery",requireLib:"lib/require"},modules:[{name:"foo",include:["requireLib","app"],create:!0}]});

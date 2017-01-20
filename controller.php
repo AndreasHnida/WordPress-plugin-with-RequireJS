@@ -14,7 +14,7 @@ class My_Plugin_Controller {
 
     // Enqueue RequireJS
     add_action('wp_enqueue_scripts', array($this, 'add_myplugin_scripts'));
-    add_filter( 'clean_url', array($this, 'fix_requirejs_script'), 11, 1 );
+    //add_filter( 'clean_url', array($this, 'fix_requirejs_script'), 11, 1 );
 
     // Create admin menu
     add_action( 'admin_menu', array($this, 'admin_create_menu'));
@@ -23,7 +23,7 @@ class My_Plugin_Controller {
   
   // Enqueue scripts front-end
   function add_myplugin_scripts() {
-    wp_enqueue_script('require', MY_PLUGIN_URL . 'js/lib/require.js', false, MY_PLUGIN_VERSION);
+    wp_enqueue_script('require', MY_PLUGIN_URL . 'js/main.built.js', false, MY_PLUGIN_VERSION);
   }
 
   /*

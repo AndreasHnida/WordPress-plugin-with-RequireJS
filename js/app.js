@@ -1,19 +1,14 @@
 // For any third party dependencies, like jQuery, place them in the lib folder.
 
 // Get absolute directory
-var appUrl = require.toUrl('app');
-var arr = appUrl.split('/');
-arr.pop();
-var dir = arr.join('/');
-
 // Configure loading modules from the lib directory,
 // except for 'app' ones, which are in a sibling
 // directory.
 requirejs.config({
-  baseUrl: dir,
+  baseUrl: '../js',
   paths: {
-    app: dir+'/app',
-    jquery: dir+'/lib/jquery'
+    app: '/app',
+    jquery:'/lib/jquery'
   },
     "shim": {
 	"jquery-cookie" : ['jquery']
