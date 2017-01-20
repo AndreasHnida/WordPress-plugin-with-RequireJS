@@ -1,8 +1,6 @@
-define(function (require) {
+requirejs(['lib/jquery'], function ($) {
 
-  var $ = require('lib/jquery');
-
-  $(document).ready(function() {
+   $(document).ready(function() {
       alert('hallo ich lebe!')
     console.log('jQuery has been loaded through a RequireJS Wordpress plugin');
   });
